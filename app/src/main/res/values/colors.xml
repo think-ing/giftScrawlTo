@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="btn_a_bg">#99E3E3E3</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="paint_view_background">#99000000</color>
+    <color name="scrawl_view_background">#a9000000</color>
+</resources>

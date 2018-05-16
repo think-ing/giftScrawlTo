@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#00000000">
+
+        <com.mzw.giftscrawlto.ScrawlView
+            android:id="@+id/id_ScrawlView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/paint_view_background"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#616161"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/scrawl_view_background"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/id_clear_view"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_a"
+                    android:src="@mipmap/icon_game_manage_del"/>
+                <TextView
+                    android:id="@+id/id_total_price_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text=""/>
+                <ImageView
+                    android:id="@+id/id_hide_view"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_a"
+                    android:src="@mipmap/more_a"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#616161"/>
+            <RelativeLayout
+                android:id="@+id/emotionlayout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:gravity="bottom" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/imagepager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:scrollbars="none"
+                    android:layout_above="@+id/page_relativelayout" />
+
+                <FrameLayout
+                    android:id="@+id/page_relativelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/id_chongzhi_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="8dp"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/bg_06"
+                            android:text="充 值"/>
+                        <ImageView
+                            android:id="@+id/id_money_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/id_chongzhi_view"
+                            android:layout_toEndOf="@+id/id_chongzhi_view"
+                            android:layout_toRightOf="@+id/id_chongzhi_view"
+                            android:src="@mipmap/money"/>
+                        <TextView
+                            android:id="@+id/id_my_coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="#0087C6"
+                            android:textSize="14sp"
+                            android:layout_alignBottom="@+id/id_money_icon"
+                            android:layout_toEndOf="@+id/id_money_icon"
+                            android:layout_toRightOf="@+id/id_money_icon"
+                            android:text="0"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/circlelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/id_send_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_h"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|right"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#ffffff"
+                        android:text="发 送"/>
+
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
